@@ -3,7 +3,7 @@ const fs = require('fs');
 (async () => {
     const browser = await puppeteer.launch({
         executablePath: '/usr/bin/chromium-browser',
-        args: [ '--disable-gpu', '--disable-setuid-sandbox', '--no-sandbox', '--no-zygote' ] });
+        args: [ '--disable-gpu', '--disable-setuid-sandbox', '--no-sandbox', '--no-zygote' ] 
     });
     const page = await browser.newPage();
     const url = 'https://books.toscrape.com/';
