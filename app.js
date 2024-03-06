@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 (async () => {
-    const browser = await puppeteer.launch({ headless: false});
+    const browser = await puppeteer.launch();
     const page = await browser.newPage();
     const url = 'https://books.toscrape.com/';
     await page.goto(url);
